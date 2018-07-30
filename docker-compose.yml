@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  ep-restman.services.orders:
+    image: ${DOCKER_REGISTRY}eprestmanservicesorders
+    build:
+      context: .
+      dockerfile: EP-RestMan.Services.Orders\Dockerfile
